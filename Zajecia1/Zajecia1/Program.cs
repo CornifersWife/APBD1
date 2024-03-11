@@ -14,6 +14,15 @@ public class Program {
         }
 
         return (avgValue / numbers.Length);
-        
+    }
+
+    public static int MaxValue(int[] numbers) {
+        int maxValue = numbers[0];
+        for (int i = 0; i < numbers.Length; i++) {
+            if (maxValue< numbers[i]) {
+                maxValue = numbers[i];
+            }
+        }
+        return maxValue;
     }
 }
